@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Atividade JS</title>
+    <link rel="stylesheet" href="./style/estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="rectangle">
+            <h1 class="titles">ATIVIDADE DE JAVASCRIPT</h1>
+            <div class="menu">
+                <button class="menu-button" onclick="location.href='index.html'">Calculadora</button>
+                <button class="menu-button" onclick="location.href='cursos.html'">Cursos</button>
+                <button class="menu-button" onclick="location.href='tabela.html'">Tabela</button>
+            </div>
+            <div class="cursos">
+                <h2 class="titles">Cursos</h2>
+                <div class="grid-container">
+                    <div class="input-group grid-item">
+                        <h3>Cursos Disponiveis</h3>
+                        <select multiple class="available-courses">
+                            <option value="js">JavaScript</option>
+                            <option value="jquery">jQuery</option>
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="c">C#</option>
+                            <option value="php">PHP</option>
+                            <option value="delphi">Delphi</option>
+                            <option value="vb">Visual Basic</option>
+                            <option value="assembly">Assembly</option>
+                        </select>
+                    </div>
+                    <div class="input-group grid-item">
+                        <h3>Cursos Escolhidos</h3>
+                        <select multiple class="chosen-courses">
+                            <!-- Aqui é onde você pode adicionar os cursos escolhidos posteriormente -->
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+            <p>Sitema desenvolvido por Maria Eduarda Pedroso - 2150336</p>
+        </div>
+    </div>
+
+    <script src="./script/cursos.js"></script>
+
+</body>
+
+</html>

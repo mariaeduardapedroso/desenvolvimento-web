@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/fundo.jfif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.titles{
+    text-align: center;
+}
+
+.rectangle {
+    background-color: gainsboro;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    padding-top: 10px;
+}
+
+.menu-button {
+    cursor: pointer;
+    background: gray;
+    border: none;
+    font-size: 16px;
+    transition: font-weight 0.3s;
+}
+
+.menu-button:hover {
+    font-weight: bold;
+}
+
+.calculator {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cursos {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.tabela {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.grid-item {
+    padding: 10px; 
+}
+
+/* Estilização da Calculadora.html */
+
+.calculator table th, .calculator table td {
+    border: none;  
+}
+
+.calculator table tr:hover {
+    background-color: transparent;
+    font-weight: normal; 
+}
+
+.input-calculator {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.calculator-button {
+    margin: 10px 5px;
+    text-align: center;
+    font-size: x-large;
+    background-color: gray;
+    border: 2px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 50%;
+}
+
+/* Estilização tabela.html */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+.tabela table tr:hover {
+    background-color: white;  
+    font-weight: bold;
+}
+
+.export-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    transition: background-color 0.3s;
+    border: 2px solid black;
+}
+
+.export-btn:hover {
+    background-color: darkgray;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;  
+}
+
+hr {
+    border: none; 
+    height: 1px;  
+    background-color: black; 
+    margin: 20px 0; 
+}
+
+/* Estilização do cursos.html */
+
+.available-courses {
+    width: 100%;
+    height: 100px; 
+}
+
+.chosen-courses {
+    width: 100%;
+    height: 100px;
+    overflow-y: auto; 
+    border: 1px solid #ccc; 
+    background-color: white;
+    padding: 5px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+
+<body>
+    <script>
+        document.write("<h2>Ola mundo</h2>");
+        document.write("<h2>" + document.title + "</h2>");
+    </script>
+    <p id="paragrafo">olá</p>
+    <button type="button" onclick="alert('Bem Vindo!')">Clique Aqui!</button></br>
+    <button type="button" onclick="mfuncao()">Traduza!</button>
+
+    <script>
+        function mfuncao() {
+            var x = document.getElementById("paragrafo");
+            x.innerHTML = "Hello";
+        }
+    </script>
+</body>
+
+</html>

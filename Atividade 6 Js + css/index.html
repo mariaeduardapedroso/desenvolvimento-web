@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Atividade JS</title>
+    <link rel="stylesheet" href="./style/estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="rectangle">
+            <h1 class="titles">ATIVIDADE DE JAVASCRIPT</h1>
+            <div class="menu">
+                <button class="menu-button" onclick="location.href='index.html'">Calculadora</button>
+                <button class="menu-button" onclick="location.href='cursos.html'">Cursos</button>
+                <button class="menu-button" onclick="location.href='tabela.html'">Tabela</button>
+            </div>
+            <div class="calculator">
+                <h2 class="titles">Calculadora</h2>
+                <div class="grid-container">
+                    <div class="input-group grid-item">
+                        <table class="clearcss">
+                            <tr>
+                                <td colspan="2"><input type="text" id="result" class="input-calculator" placeholder="RESULTADO">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="num1" class="input-calculator" placeholder="número 1"></td>
+                                <td><input type="text" id="num2" class="input-calculator" placeholder="número 2"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="button-group grid-item">
+                        <table class="clearcss">
+                            <tr>
+                                <td><button class="calculator-button" id="multiply"> X </button></td>
+                                <td><button class="calculator-button" id="subtract"> - </button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="calculator-button" id="divide"> / </button></td>
+                                <td> <button class="calculator-button" id="add"> + </button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <p>Sitema desenvolvido por Maria Eduarda Pedroso - 2150336</p>
+        </div>
+    </div>
+
+    <script src="./script/calculadora.js"></script>
+
+</body>
+
+</html>

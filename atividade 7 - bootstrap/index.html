@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="shortcut icon" href="imagens/icone-nav.svg" />
+  <!--ICONE DO BUSCADOR-->
+  <link href="css/cadastro.css" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!--IMPORTANDO ARQUIVO CSS-->
+</head>
+
+<body>
+  <header>
+    <h1 class="titulo-principal">PLANEJAMENTO FINANCEIRO</h1>
+  </header>
+  <div class="container">
+    <div class="row">
+      <!-- Início do Menu Lateral -->
+      <div class="col-md-3">
+        <menu class="list-group">
+          <h2 id="espacamento">Menu</h2>
+          <a href="https://link1.com" class="list-group-item list-group-item-action">Opção 1</a>
+          <a href="https://link2.com" class="list-group-item list-group-item-action">Opção 2</a>
+          <a href="https://link3.com" class="list-group-item list-group-item-action">Opção 3</a>
+          <a href="https://link4.com" class="list-group-item list-group-item-action">Opção 4</a>
+        </menu>
+      </div>
+      <!-- Fim do Menu Lateral -->
+
+      <div class="container col-md-9">
+        <div class="container">
+          <!--TITULO SECUNDÁRIO-->
+          <h2 class="titulo-secundario" id="espacamento">CADASTRO CONTAS E RECEBIMENTOS</h2>
+          <p>Cadastre suas saidas e entradas de dinheiro nessa página</p>
+        </div>
+
+        <!--FORM-->
+        <form action="/confirmacao.html" id="forms" onsubmit="return analise()"><!--method="post"-->
+          <div class="row" id="espacamento">
+            <label for="form-nome" class="form-label">NOME:</label><br>
+            <input type="text" id="form-nome" class="form-control" minlength="2" placeholder="Mensalidade escola">
+            <p id="mensagem-form-nome" class="estilo-erro"></p>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-3" id="espacamento">
+              <div>
+                <label for="form-valor" class="form-label">VALOR:</label><br>
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1">R$</span>
+                  <input type="number" id="form-valor" class="form-control">
+                </div>
+                <p id="mensagem-form-valor" class="estilo-erro"></p>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3" id="espacamento">
+              <div>
+                <label for="form-juros" class="form-label">JUROS:</label><br>
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon2">%</span>
+                  <input type="number" id="form-juros" class="form-control">
+                </div>
+                <p id="mensagem-form-juros" class="estilo-erro"></p>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6" id="espacamento">
+              <label for="form-classificacao" class="form-label">CLASSIFICAÇÃO:</label><br>
+              <select id="form-classificacao" class="form-select">
+                <!--VALUE MUDAR PARA NOME SE PRECISAR DEPOIS-->
+                <option value="">Selecione</option>
+                <optgroup id="entradas" label="Receita">
+                  <option value="1">Pagamento</option>
+                  <option value="2">Trabalho por fora</option>
+                  <option value="3">Diversos</option>
+                </optgroup>
+                <optgroup id="saidas" label="Despesas">
+                  <option value="4">Alimentação</option>
+                  <option value="5">Despesas filhos</option>
+                  <option value="6">Saude</option>
+                  <option value="7">Diversão</option>
+                  <option value="8">Despesas casa</option>
+                  <option value="9">Despesas minhas</option>
+                  <option value="10">Despesas animais</option>
+                </optgroup>
+              </select>
+              <p id="mensagem-form-classificacao" class="estilo-erro"></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-3" id="espacamento">
+              <label for="form-data-correta" class="form-label">DATA CORRETA:</label><br>
+              <input type="date" id="form-data-correta" class="form-control">
+              <p id="mensagem-form-data-correta" class="estilo-erro"></p>
+            </div>
+
+            <div class="col-sm-6 col-md-3" id="espacamento">
+              <label for="form-real-data" class="form-label">DATA TRANSF:</label><br>
+              <input type="date" id="form-real-data" class="form-control">
+              <p id="mensagem-form-real-data" class="estilo-erro"></p>
+            </div>
+
+            <div class="col-sm-12 col-md-6" id="espacamento">
+              <label for="form-transacao" class="form-label">LOCAL DA TRANSAÇÃO:</label><br>
+              <select id="form-transacao" class="form-select">
+                <!--VALUE MUDAR PARA NOME SE PRECISAR DEPOIS-->
+                <option value="">Selecione</option>
+                <option value="1">Banco X</option>
+                <option value="2">Cartão de crédito</option>
+                <option value="3">Dinheiro</option>
+              </select>
+              <p id="mensagem-form-transacao" class="estilo-erro"></p>
+            </div>
+          </div>
+
+          <div class="row" id="espacamento">
+            <label for="form-descricao" class="form-label">DESCRIÇÃO:</label><br>
+            <textarea id="form-descricao" class="form-control"></textarea><br>
+            <p id="mensagem-form-descricao" class="estilo-erro"></p>
+          </div>
+
+          <div class="row" id="espacamento">
+            <input class="btn btn-success" value="Cadastrar recebidos!" class="form-botao" type="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer id=espacamento-2>
+    <address>
+      <img src="imagens/logo-rodape.png" alt="Moeda amarela com um cifrão" class="imagem-rodape">
+      <p>Email: <a href="mailto:maria.pedroso@itlab.com" class="link">maria.pedroso@itlab.com</a></p>
+    </address>
+    <p class="copyright">&copy; Copyright Maria Eduarda Pedroso</p>
+  </footer>
+
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/formulario.js"></script>
+
+  <!--MASCARA DE PREÇO-->
+</body>
+
+</html>

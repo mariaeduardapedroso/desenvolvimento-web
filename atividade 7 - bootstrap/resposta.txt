@@ -1,0 +1,8 @@
+const mensagensDeErro = {/*DEIXAR AS MENSAGENS DE ERRO PERSONALIZADA */
+dataPagamento:{
+
+},
+dataCorreta:{
+    
+}
+}
